@@ -1,23 +1,25 @@
-(define (abs x)
+#lang racket
+
+(define (abs1 x)
     (cond ((> x 0) x)
           ((= x 0) 0)
           ((< x 0) (- x))))
 
-(display(abs (- 5)))
+(display(abs1 (- 5)))
 
 (newline)
 
-(define (abs x)
+(define (abs2 x)
     (cond ((< x 0) (- x))
           (else x)))
 
-(display(abs (- 5)))
+(display(abs2 (- 5)))
 
 (newline)
 
-(define (abs x)
+(define (abs3 x)
     (if (< x 0)
         (- x)
         x))
 
-(display(abs (- 5)))
+(display(abs3 (- 5)))
