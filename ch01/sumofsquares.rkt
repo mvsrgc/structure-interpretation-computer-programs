@@ -1,11 +1,7 @@
 #lang racket
 
-(define (square x) (* x x))
-(display(square 21))
+(define (sos x y) (+ (sq x) (sq y)))
 
-(newline)
+(define (sq x) (* x x))
 
-(define (sum-of-squares x y)
-    (+ (square x) (square y)))
-
-(display(sum-of-squares 3 4))
+(sos 3 4)
