@@ -41,3 +41,5 @@
 (print-rat one-third)
 
 (print-rat (add-rat one-half one-third))
+(print-rat (mul-rat one-half one-third))
+(print-rat (add-rat one-third one-third))
