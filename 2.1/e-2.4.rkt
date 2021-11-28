@@ -8,4 +8,12 @@
     (z (lambda (p q) q)))
 
 (car (cons 1 2))
+
 (cdr (cons 1 2))
+
+;; Breakdown
+
+;; (car (cons 1 2))
+;; (car (lambda (m) (m 1 2)))
+;; ((lambda (m) (m 1 2)) (lambda (p q) p))
+;; ((lambda (p q) p) 1 2)
