@@ -9,8 +9,11 @@
 (define (element-of-set? x set)
     (cond
         [(null? set) #f]
-        [(eq? x (car set)) #t]
+        [(equal? x (car set)) #t]
         [else (element-of-set? x (cdr set))]))
 
 
-(element-of-set? 1 (list 1 2 3))
+(define (adjoin-set x set)
+    (if (element-of-set? x set) 
+        set 
+        (cons x set)))
