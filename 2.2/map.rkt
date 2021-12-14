@@ -8,6 +8,8 @@
 
 (scale-list (list 1 2 3 4) 10)
 
+(scale-list (list 1 2 3 4) 10)
+
 ;; Higher-order procedure
 
 (define (plus-one x) (+ x 1))
